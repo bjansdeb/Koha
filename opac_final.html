@@ -1,0 +1,232 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" type="text/css" href="opac_24.css">
+  <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.8/dist/umd/popper.min.js" integrity="sha384-I7E8VVD/ismYTF4hNIPjVp/Zjvgyol6VFvRkX/vR+Vc4jQkC+hVqc2pM8ODewa9r" crossorigin="anonymous"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.min.js" integrity="sha384-G/EV+4j2dNv+tEPo3++6LCgdCROaejBqfUeNjuKAiuXbjrxilcCdDz6ZAVfHWe1Y" crossorigin="anonymous"></script>
+  <title>Koha conservatory experimental page</title>
+  <style>
+
+#OpacNav {
+  padding: 2px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+}
+
+.kcrb-ul {
+  list-style-type: none;
+  margin-bottom: 15px;
+  padding: 1px;
+}
+
+.kcrb-logo {
+    /* max-width: 236px;
+  height: auto;
+  max-height: 150px; */
+      border-radius: 4px;
+      padding: 5px;
+      width:auto;
+      height: 140px;
+      max-width: 140px;
+}
+
+.kcrb-logo:hover{
+    border: 1px solid lightskyblue;
+}
+
+.kcrb-home-container {
+  margin: 10px;
+}
+
+
+.kcrb-grid-container {
+  display: grid;
+  grid-template-columns: auto auto;
+  gap: 1em;
+  padding: 3px;
+}
+
+.kcrb-grid-container div{
+    border: 1px solid transparent;
+    border-radius: 4px;  
+    background-color: white;
+    text-align: center;
+    margin: 5px;
+}
+
+.kcrb-img-div{
+    box-sizing: border-box;
+   /* width: 100px; */
+  /* width: 100%; */
+
+}
+
+.shining-pic{
+    width: 100%;
+    /* width: 100%;
+    height: 100%; */
+    object-fit: cover;
+}
+
+.kcrb-textual-area{
+    padding: 8px;
+}
+
+@media  (max-width: 499px){
+  .kcb-logo{
+    max-width: 100px;
+  }
+  .shining-pic{
+    max-width: 100px;
+  }
+  .kcrb-img-div{
+    max-width: 100px;
+  }
+
+}
+
+/* .shining-cover-container{
+    
+} */
+  </style>
+</head>
+
+<body>
+
+<div class="main">
+ 
+ <nav aria-label="Fil d'Ariane" class="breadcrumbs" id="breadcrumbs">
+ <ol class="breadcrumb">
+
+
+ </ol>
+ </nav>
+
+ 
+ <div id="notloggedin" class="container-fluid">
+ 
+ 
+
+ <div class="row">
+ 
+ <div class="col-12 col-lg-2 order-3 order-lg-1">
+ <div id="navigation">
+ 
+ <div id="OpacNav">
+  <div class="default_item">
+    <div class="default_body">
+    <div class="kcrb-img-div">
+     <img class="shining-pic" src="https://www.kcb.be/sites/kcb/files/styles/image_953x500_/public/2019-02/kcb%20%2825%20van%2058%29.jpg?h=8b7966f8&amp;itok=l7sVZkb1" alt="books KCB" >
+    
+     <img class="shining-pic" src="https://www.kcb.be/sites/kcb/files/styles/image_953x500_/public/2019-02/kcb%20%2811%20van%2058%29.jpg?h=8b7966f8&itok=hiV6N6ns" alt="...">
+    
+     <img class="shining-pic" src="https://www.kcb.be/sites/kcb/files/styles/image_953x500_/public/2019-02/kcb%20%2827%20van%2058%29_0.jpg?h=8b7966f8&itok=7kvTt7Jx" alt="..."> 
+    </div>
+    </div> <!--end default_body-->
+ </div> <!-- end default_idem-->
+ 
+ </div> <!-- end OpacNav-->
+ </div> <!-- end navigation -->
+ </div> <!-- end col-12 col-lg-2 order-3 order-lg-1-->
+ 
+
+ 
+ 
+ <div class="col-12 col-lg-7 order-md-1 maincontent">
+ 
+
+ <h1 class="sr-only">Accueil de Koha</h1>
+
+
+  <!-- koha news -->
+ 
+ 
+ <div id="OpacMainUserBlock">
+ 
+ <div class="default_item">
+ 
+ <div class="default_body">
+
+<div class="kcrb-textual-area">
+<p>Welcome to the catalog of the library of the Brussels Royal Conservatories. Select your language at the top of the screen. Click on one of the contact addresses below to send us your suggestions or remarks.</p>
+<p>Voici le catalogue de la Bibliothèque des Conservatoires royaux de Bruxelles. Pour changer de langue, veuillez sélectionner votre choix en haut de l’écran. N’hésitez pas à cliquer sur l’une des adresses de contact pour nous envoyer vos remarques et suggestions.</p>
+<p>Dit is de catalogus van de bibliotheek van de Koninklijke Conservatoria Brussel. Selecteer je taal in de balk bovenaan. Klik op een van de contactadressen om ons suggesties en opmerkingen door te sturen.</p>
+</div>
+<!-- <table width="100%">
+<tbody>
+<tr>
+<td align="center"><a href="https://www.conservatoire.be"><img class="kcrb-logo" src="https://www.b-bc.org/images/crb700a.png" title="CRB" alt="CRB"> </a><br>
+  Conservatoire royal de Bruxelles<br>École supérieure des Arts<br><a href="https://www.conservatoire.be" target="_blank" rel="noopener"> www.conservatoire.be</a><br><a href="mailto:bibliotheque@conservatoire.be">bibliotheque@conservatoire.be</a></td>
+<td align="center"><a href="https://www.kcb.be/"><img class="kcrb-logo" src="https://www.kcb.be/themes/custom/kcb/logo.svg" title="KCB" alt="KCB"> </a><br>
+  Koninklijk Conservatorium Brussel<br>School of Arts, Erasmushogeschool<br><a href="https://www.kcb.be/" target="_blank" rel="noopener">www.kcb.be</a><br><a href="mailto:bib.kcb@ehb.be">bib.kcb@ehb.be </a></td>
+</tr>
+</tbody>
+</table> -->
+
+
+<div class="kcrb-home-container">
+<div class="kcrb-grid-container">
+<div>
+  <a href="https://www.conservatoire.be"><img class="kcrb-logo" src="https://www.b-bc.org/images/crb700a.png" title="CRB" alt="CRB"> </a><br>
+  <strong>Conservatoire royal de Bruxelles</strong><br>École supérieure des Arts<br><a href="https://www.conservatoire.be" target="_blank" rel="noopener"> www.conservatoire.be</a><br><a href="mailto:bibliotheque@conservatoire.be">bibliotheque@conservatoire.be</a></td>
+</div>
+
+<div>  
+<a href="https://www.kcb.be/"><img class="kcrb-logo" src="https://www.kcb.be/themes/custom/kcb/logo.svg" title="KCB" alt="KCB"> </a><br>
+  <strong>Koninklijk Conservatorium Brussel</strong><br>School of Arts, Erasmushogeschool<br><a href="https://www.kcb.be/" target="_blank" rel="noopener">www.kcb.be</a><br><a href="mailto:bib.kcb@ehb.be">bib.kcb@ehb.be </a>
+</div>
+
+</div> <!--kcrb-grid-container-->
+</div> <!--kcrb-home-container-->
+
+<!-- <div class="shining-cover-container">
+    <img class="shining-pic" src="https://www.kcb.be/sites/kcb/files/styles/image_953x500_/public/2019-02/kcb%20%2825%20van%2058%29.jpg?h=8b7966f8&amp;itok=l7sVZkb1" alt="books KCB" >
+<br>
+</div> -->
+<!-- shining-cover-container -->
+<!-- <div style="display:block; margin: 0 auto; width:650px;">
+    <div id="carouselExampleSlidesOnly" class="carousel slide" data-bs-ride="carousel">
+    <div class="carousel-inner" >
+        <div class="carousel-item active">
+        <img class="shining-pic" src="https://www.kcb.be/sites/kcb/files/styles/image_953x500_/public/2019-02/kcb%20%2825%20van%2058%29.jpg?h=8b7966f8&amp;itok=l7sVZkb1" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img class="shining-pic" src="https://www.kcb.be/sites/kcb/files/styles/image_953x500_/public/2019-02/kcb%20%2811%20van%2058%29.jpg?h=8b7966f8&itok=hiV6N6ns" class="d-block w-100" alt="...">
+        </div>
+        <div class="carousel-item">
+        <img class="shining-pic" src="https://www.kcb.be/sites/kcb/files/styles/image_953x500_/public/2019-02/kcb%20%2827%20van%2058%29_0.jpg?h=8b7966f8&itok=7kvTt7Jx" class="d-block w-100" alt="...">
+        </div>
+    </div>
+    </div>
+</div> -->
+
+
+
+</div> <!-- default body -->
+</div> <!-- default_item" -->
+ 
+
+ </div> <!-- / .col 6/8 -->
+
+ 
+ <div  class="col-12 col-lg-3 order-md-2">
+ </div> <!-- / .col -->
+ </div> <!-- /.container-fluid -->
+ </div> <!-- /.row -->
+</div>
+
+</body> <!-- ajouté avec l'entête -->
+
+<footer>
+    Liens vers les autres pages
+    <ul>
+        <li><a href="opac_home.html">page avec logos intégrés à l'image</a></li>
+        <li><a href="opac_home_third.html">page avec image entre logos</a></li>
+    </ul>
+
+</footer>
+
+</html>
