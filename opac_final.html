@@ -88,9 +88,50 @@
 
 }
 
-/* .shining-cover-container{
-    
+/*image animation */
+
+.img-anim-container {
+  position: relative;
+  width: 100%;
+}
+
+/* .image {
+  display: block;
+  width: 100%;
+  height: auto;
 } */
+
+.img-anim-container:hover .overlay {
+  height: 50%;
+}
+
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-color: #FAEBD8;
+  overflow: hidden;
+  width: 100%;
+  height: 0;
+  transition: .5s ease;
+}
+
+.text {
+  white-space: nowrap;
+  text-wrap: wrap;
+  text-align: center; 
+  color: black;
+  font-size: 16px;
+  position: absolute;
+  overflow: hidden;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+
+
   </style>
 </head>
 
@@ -123,9 +164,20 @@
  <div id="OpacNav">
   <div class="default_item">
     <div class="default_body">
+
     <div class="kcrb-img-div">
-     <img class="shining-pic" src="https://www.conservatoire.be/files/Image/biblioth-que/Partituur.png?uniqID=25026" alt="books KCB" >
+    <figure>
+    <div class ="img-anim-container">
+    <a href="https://catalog-intra.b-bc.org/cgi-bin/koha/catalogue/detail.pl?biblionumber=6917"><img class="shining-pic" src="https://www.conservatoire.be/files/Image/biblioth-que/Partituur.png?uniqID=25026" alt="books KCB" title="C.P.E. Bach, Sinfonia IV : a 2 violini, violetta e basso, ca 1773, B-Bc 25902" ></a>
+    <div class="overlay">
+    <div class="text">C.P.E. Bach, Sinfonia IV : a 2 violini, violetta e basso, ca 1773, B-Bc 25902</div>
     </div>
+        </div> <!-- img-anim-container-->
+     <figcaption>C.P.E. Bach, Sinfonia IV : a 2 violini, violetta e basso, ca 1773, B-Bc 25902</figcaption>    
+    </figure>
+
+    </div> <!-- end kcrb img div-->
+
     </div> <!--end default_body-->
  </div> <!-- end default_idem-->
  
@@ -184,7 +236,7 @@
 </div> <!--kcrb-home-container-->
 
 <div class="shining-cover-container">
-    <img class="shining-pic" src="https://www.conservatoire.be/files/Image/biblioth-que/CP-Bach-banner.jpg?uniqID=90487" alt="books KCB" >
+    <img class="shining-pic" style="rotate: 0.5deg" src="https://www.conservatoire.be/files/Image/biblioth-que/CP-Bach-banner.jpg?uniqID=90487" alt="books KCB" >
 <br>
 </div>
 <!-- shining-cover-container -->
